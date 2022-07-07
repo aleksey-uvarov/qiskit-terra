@@ -466,7 +466,7 @@ class VQE(VariationalAlgorithm, MinimumEigensolver):
 
     def compute_minimum_eigenvalue(
         self, operator: OperatorBase, aux_operators: Optional[ListOrDict[OperatorBase]] = None
-    ) -> MinimumEigensolverResult:
+    ) -> VQEResult:
         super().compute_minimum_eigenvalue(operator, aux_operators)
 
         if self.quantum_instance is None:
